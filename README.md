@@ -65,3 +65,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 docker exec -it docker_env_nginx  /bin/bash
+
+## There is no existing directory at /storage/logs and its not buildable: Permission denied
+
+php artisan route:clear
+php artisan config:clear
+php artisan cache:clear
