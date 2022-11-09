@@ -17,9 +17,8 @@ services:
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - ./nginx/ssl/:/ssl/
-      - ./:/var/www/html/laravel-docker
+      - ./web:/var/www/html/laravel-docker
     restart: always
-
   php:
     container_name: docker_env_php
     build: ./php/
@@ -29,45 +28,27 @@ services:
       - server
       - data
     volumes:
-      - ./web/:/var/trp/
+      - ./web:/var/www/html/laravel-docker
     restart: always
-
-  redis:
-    container_name: docker_env_redis
-    image: redis:6.0 # stable version
-    ports:
-      - "6379:6379"
-    networks:
-      - data
-    restart: always
-
-  postgre:
-    container_name: docker_env_postgre
-    ports:
-      - "5432:5432"
-    image: "postgres:12.6"
-    volumes:
-      - /trp/database/dev/database_data:/var/lib/postgresql/data # persist data even if container shuts down
-    networks:
-      - data
-    environment:
-      POSTGRES_DB: ${DB_NAME}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-    restart: always
-
-  mysqldb:
-    image: mysql:5.7
-    platform: linux/amd64
-    restart: unless-stopped
-    env_file: ./.env
-    environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql-data:/var/lib/mysql
-    networks:
-      - data
+  # redis:
+  #   container_name: docker_env_redis
+  #   image: redis:6.0 # stable version
+  #   ports:
+  #     - "6379:6379"
+  #   networks:
+  #     - data
+  #   restart: always
+  # mysql:
+  #   image: mysql:5.7
+  #   platform: linux/amd64
+  #   restart: unless-stopped
+  #   env_file: .env
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+  #     - MYSQL_DATABASE=$MYSQLDB_DATABASE
+  #   ports:
+  #     - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
+  #   volumes:
+  #     - /var/lib/mysql
+  #   networks:
+  #     - data
