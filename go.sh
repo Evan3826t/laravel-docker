@@ -1,0 +1,1 @@
+docker exec -it docker_env_php bash

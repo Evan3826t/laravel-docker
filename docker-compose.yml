@@ -30,25 +30,26 @@ services:
     volumes:
       - ./web:/var/www/html/laravel-docker
     restart: always
-  # redis:
-  #   container_name: docker_env_redis
-  #   image: redis:6.0 # stable version
-  #   ports:
-  #     - "6379:6379"
-  #   networks:
-  #     - data
-  #   restart: always
-  # mysql:
-  #   image: mysql:5.7
-  #   platform: linux/amd64
-  #   restart: unless-stopped
-  #   env_file: .env
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
-  #     - MYSQL_DATABASE=$MYSQLDB_DATABASE
-  #   ports:
-  #     - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
-  #   volumes:
-  #     - /var/lib/mysql
-  #   networks:
-  #     - data
+  redis:
+    container_name: docker_env_redis
+    image: redis:6.0 # stable version
+    ports:
+      - "6379:6379"
+    networks:
+      - data
+    restart: always
+  mysql:
+    container_name:  laravel_mysql
+    image: mysql:5.7
+    platform: linux/amd64
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+      - MYSQL_DATABASE=$MYSQLDB_DATABASE
+    ports:
+      - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
+    volumes:
+      - /var/lib/mysql
+    networks:
+      - data
