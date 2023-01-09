@@ -1,0 +1,166 @@
+.contact-txt { overflow: hidden; }
+.contact-txt .threebox { float: left; margin-right: 2%; }
+.contact-txt .threebox:last-child { margin-right: 0; width: 30%; }
+.contact-txt .threebox:first-child { width: 31%; }
+.contact-txt .threebox.img { background-image: url(/images/35/contact-img.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
+.contact-txt .threebox >h3 { color: #111; font-size: 18px; }
+.contact-txt .threebox article { color: #929292; font-size: 14px; }
+
+.contactinfo { margin-top: 20px; }
+
+.contact-txt  li { overflow: hidden; margin-bottom: 30px; }
+.contact-txt  li .photo { float: left; margin-right: 10px; margin-top: 5px; }
+.contact-txt  li .txt { float: left; }
+.contact-txt  li .txt b { font-size: 16px; color: #696969; font-weight: normal; line-height: 90%; }
+.contact-txt  li .txt p , .contact-txt  li .txt p a { color: #111; font-size: 14px; line-height: 90%; margin-top: 6px; }
+
+#gmap iframe { height: 100%; width: 100%; min-height: 366px; }
+
+#contact { margin-top: 50px; }
+#contact .AD-form { width: 45%; float: right; }
+#contact h3 {color: #2f2f2f;font-size: 18px;text-align: center;padding-top: 5px;padding-left: 0;padding-bottom: 10px;text-transform: uppercase;font-size: 54px;font-weight: 800;}
+#contact .ccsJ{
+    display: flex;
+    justify-content: center;
+}
+#contact h3.two {font-size: 16px;font-weight: normal;padding-top: 0;padding-left: 0;}
+#contact h3.rred {padding-top: 0;font-size: 16px;color: #c49e6d;}
+
+form , fieldset { overflow: hidden; border: 0; margin: 0; padding: 0; }
+
+.contact-form { clear: both; padding: 50px 20px; width: 1200px; margin: 0 auto; max-width: 95%; }
+.contactLeft { float: left; width: 45%; }
+.contactRight { float: right; width: 45%; }
+.contactBottom { float: left; width: 100%; }
+.contact-form fieldset { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; }
+.contact-form fieldset *:focus { outline: none; }
+.contact-form .item {overflow: hidden;position: relative;padding: 10px 0 1px;}
+.contact-form .item.col_2 { width: 16.66666667%; }
+.contact-form .item.col_3 { width: 25%; }
+.contact-form .item.col_4 { width: 33.33333333%; }
+.contact-form .item.col_8 { width: 66.66666667%; }
+.contact-form .item.col_9 { width: 75%; }
+.contact-form .item.col_10 { width: 83.33333333%; }
+.contact-form .item.col_12 { width: 100%; }
+#service .contact-form .bigg{margin-top: 35px;}
+.contact-form .item:before {position: absolute;width: calc(100% - 20px);height: 1px;background: #bebebed1;display: block;bottom: 0;left: 10px;content: "";}
+.contact-form .item p , .contact-form .item .up_box {margin: 0 10px;padding: 8px 0px;}
+.contact-form .item .up_box{
+    padding: 2px 0;
+}
+.contact-form .item i { font-size: 5pt; color: #595b5b; }
+.contact-form .item b.rred {margin: 0 3px;color: #c49e6d;}
+.contact-form .item p label {margin-bottom: 5px;display: block;font-size: 16px;}
+.contact-form .item p input[type="text"] , .contact-form .item p select , .contact-form .item p textarea {padding: 10px;width: calc(100% - 20px);background: #ececec73;box-shadow: none;-webkit-appearance: none;border: none;}
+.contact-form .item p select {width: 100%;color: #5c5c5c;background: url(https://www.mb-design.com.tw/images/35/selectbutton.png) no-repeat 97% 50% / 7px;font-size: 16px;background-color: #f5f5f5fa;}
+.contact-form .item p select#BirthM , .contact-form .item p select#BirthD { padding: 0 10px;width: 60px; background: no-repeat; }
+.contact-form .item p select option { color: #666; }
+.contact-form .item p font {padding: 10px;display: flex;flex-wrap: wrap;align-items: center;line-height: 1;color: #5c5c5c;}
+.contact-form .item p font span { margin-right: 20px; display: flex; align-items: center; }
+.contact-form .item p font span input[type="radio"] { margin-right: 5px; }
+.contact-form .item.how p font { padding: 5px 10px; }
+.contact-form .item.how p input[type="text"] { padding: 5px; width: 100px; background: #f5f5f5; }
+.contact-form .item.two p { float: left; margin-right: 10px; }
+.contact-form .item p input#Checknum {width: calc(100% - 80px);margin-right: 5px;}
+.contact-form .item.check_box:before , .contact-form .item.sent:before { background: none; }
+.contact-form .item.check_box .formset { margin: 5px 10px; }
+.contact-form .item.sent { display: flex; align-items: center; justify-content: flex-end; }
+.contact-form .item.sent .send a {display: inline-block;color: #fff;background: #b38e5e;border-radius: 6px;padding: 7px 20px;font-size: 15px;font-weight: 800;}
+.contact-form .item.sent .send a i { color: #fff; }
+.contact-form .item.sent .send a:hover{
+    background: #c49e6d;
+}
+/* previewImgs */
+#previewImgs { margin-top: 10px; }
+#previewImgs p { position: relative; margin: 0 10px 10px 0; width: 120px; background: no-repeat 50% / 100% auto; border: 1px #ccc solid; display: inline-block; }
+#previewImgs p a { position: absolute; width: 25px; height: 25px; background: #f50202; border-radius: 50%; text-align: center; line-height: 20px; color: #fff; top: -5px; right: -10px; z-index: 1; }
+
+#waylink { margin-bottom: 10px; }
+#waylink ol { width: 100%; }
+.contact-form .item.how p label {/* width: 160px; */}
+.contact-form .item.how p span { margin-right: 15px; }
+.contact-form .item.how p label .nanaban{
+    font-size: 15px;
+    color: #626262;
+    margin-right: 0;
+    margin-left: 9px;
+    background: #fff1218f;
+    padding: 1px 10px;
+}
+@media screen and (max-width: 1680px) {
+	#content.contactStyle .framework { width: 90%; }
+	.second-width { width: 90%; }
+}
+@media screen and (max-width: 1366px) {
+	#gmap iframe { min-height: 304px; }
+}
+@media screen and (max-width: 1280px) {
+	.contact-form {width: 900px;}
+	.contact-form .item.col_2 , .contact-form .item.col_3 , .contact-form .item.col_4 { width: 50%; }
+	.contact-form .item.how { width: 100%; }
+	.contact-form .item.sent { width: 150px; }
+}
+@media screen and (max-width: 1024px) {
+	.content-main { padding: 50px 40px; }
+	.contactLeft , .contactRight { width: 48%; }
+	.contact-title article { width: 40%; }
+	.contact-txt .threebox:first-child { width: 31%; }
+	.contact-txt .threebox { float: left; margin-right: 1%; }
+	#service #contact{
+	    padding: 5px 0px;
+	}
+	.contact-form{
+    width: 100%;
+    padding: 20px 20px;
+}
+}
+
+@media screen and (max-width: 980px) {
+	.contact-form { width: 90vw; }
+	.contact-txt .threebox.img , #gmap iframe { height: 340px; margin-right: 1%; }
+	.contact-txt .threebox:first-child { width: 100%; }
+	.contact-txt .threebox:last-child { margin-right: 0; width: 50%; }
+	#contact h3 {padding-top: 25px;font-size: 37px;}
+	#contact h3.two {
+    font-size: 16px;
+}
+	#contact .AD-form { width: 50%; }
+}
+@media screen and (max-width: 768px) {
+	.contactLeft , .contactRight { width: 100%; }
+	.contact-title .img { display: none; }
+	.contact-title .txt { display: block; font-size: 20px; }
+	.contact-title article { float: none; width: 100%; margin: 20px 0; }
+	.contact-form { padding: 0 20px; }
+	#content.contactStyle .framework { width: 100%; padding: 0; }
+	.contact-form .item.how span { display: block; margin-bottom: 5px; }
+	#contact .AD-form { width: 100%; float: none; padding: 85px 0 20px; }
+}
+@media screen and (max-width: 640px) {
+	.contact-form .item.col_4 , .contact-form .item.col_2 , .contact-form .item.sent { width: 100%; }
+	.contact-form .item.sent { justify-content: center; }
+}
+@media screen and (max-width: 480px) {
+	.contact-form { padding: 0; }
+	.contact-title .txt { font-size: 18px; }
+	.content-main { padding: 30px 20px; }
+	.contact-form .item.sent .send , .contact-form .item.sent p { float: none; }
+	.contact-form .item.sent .send { margin-top: 20px; }
+	.second-width { padding: 50px 0; }
+	.contact-form .item.sent p label { display: block; }
+	.contact-txt .threebox { width: 100%; margin-right: 0; }
+	.contact-txt .threebox.img { height: auto; margin-bottom: 20px; }
+	.contact-txt .threebox:first-child { width: 100%; }
+	.contact-txt .threebox:last-child { width: 100%; }
+	#content { font-size: 16px; }
+}
+@media screen and (max-width: 400px) {
+	.contact-form .item p label { margin-bottom: 5px; display: block; }
+	.contact-form .item p input[type="text"] { width: calc(100% - 10px); }
+	.contact-form .item p textarea { width: calc(100% - 20px); }
+	.contact-form .item p select { width: 100%; }
+}
+@media screen and (max-width: 375px) {
+	#contact h3 { padding-top: 0; padding-left: 95px; }
+	#contact h3.two { padding-top: 25px; margin-left: -5px; }
+}

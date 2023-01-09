@@ -1,0 +1,518 @@
+.wrapper_lines {width: 100vw;height: 100vh;top: 0;left: 0;z-index: -10;pointer-events: none;position: fixed;}
+.wrapper_lines .center_box {height: 100vh;border: #eaeaea7a 1px solid;border-width: 0 1px;}
+.workframe{
+	margin: 0 auto;
+    width: 90%;
+}
+.pos_fix {
+    position: fixed;
+}
+.col_md_4 {
+    width: 33.33333333%;
+    margin: 0 auto;
+}
+.wow {
+	animation-name: zoomIn;
+	-webkit-animation-name: zoomIn;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;	
+}
+#CProfile{
+    position: relative;
+    overflow: hidden;
+}
+#CProfile h2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 100%;
+    font-size: 36px;
+    margin: 10px 0 30px;
+}
+#CProfile b.subbtitle{
+    font-size: 10px;
+    margin-left: 0;
+    color: #828282;
+    order: 0;
+    letter-spacing: 0.55em;
+    position: relative;
+}
+#CProfile .JHbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+#CProfile .J_img{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+}
+#CProfile .J_img img{
+    object-fit: cover;
+    height: 100%;
+    object-position: 50% 50%;
+}
+#CProfile .J_text{
+    display: flex;
+    width: calc(45% - 6%);
+    flex-direction: column;
+    background: #e5e5e5;
+    padding: 150px 3%;
+    align-items: center;
+}
+#CProfile .J_text h2{
+    color: #363636;
+    line-height: 200%;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#CProfile .J_text p{
+    color: #363636;
+    font-size: 17px;
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 180%;
+}
+
+#CProfile .Jprobox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: #101010;
+    padding: 50px 0;
+}
+#CProfile .Jprobox h2{
+    color: #e7e7e7;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+#CProfile .bomm{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    position: relative;
+}
+#CProfile .bomm:before{
+	content:
+	"";
+	position: absolute;
+	width: 1px;
+	height: 310px;
+	background: #c1c1c18f;
+	top: 50px;
+}
+#CProfile .bomm .mmbox{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    margin: 0 60px;
+}
+#CProfile .bomm .mmbox p{
+    letter-spacing: 0.05em;
+}
+#CProfile .bomm .mmbox h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+#CProfile .bomm .mmbox img{
+    width: 205px;
+    margin: 20px 0;
+}
+#CProfile .Jplanbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fbfbfb;
+    padding: 30px 0;
+    z-index: 0;
+}
+#CProfile .Jplanbox h2{
+    color: #191919;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+}
+#CProfile b.subbtitle:before{
+	    content: '';
+	    position: absolute;
+	    top: -16px;
+	    width: 400px;
+	    height: 1px;
+	    background-color: #9393933b;
+	    left: calc(50% - 200px);
+	    z-index: -1;
+}
+#CProfile b.subbtitle:after{
+	content:
+	"";
+	width: 207px;
+	height: 85px;
+	position: absolute;
+	background: #fbfbfb;
+	top: -57px;
+	margin-left: -188px;
+	z-index: -1;
+}
+#CProfile .Jprobox b.subbtitle:after{
+    margin-left: -151px;
+    background: #101010;
+}
+
+#CProfile .Jsesbox b.subbtitle:after{
+    margin-left: -165px;
+    background: #f8f8f8;
+}
+#CProfile #NewsBox  b.subbtitle:after{
+    margin-left: -143px;
+    background: white;
+}
+#CProfile .listt{
+    display: flex;
+    justify-content: center;
+    margin: 45px auto 35px;
+    max-width: 100%;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+#CProfile .listt .leon{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#CProfile .listt .leon:nth-child(odd){
+    border-right: #dbdbdb78 1px solid;
+    border-left: #dbdbdb78 1px solid;
+}
+#CProfile .listt .leon:first-child{
+    border-left: unset;
+}
+#CProfile .listt .leon p{
+    color: #383838;
+    font-size: 20px;
+    font-weight: 800;
+}
+#CProfile .listt .leon b{
+    font-size: 14px;
+    color: #acacac;
+    font-weight: 400;
+}
+#CProfile .Jsesbox{
+    position: relative;
+    display: flex;
+    padding: 50px 0px 70px;
+    background: #f8f8f8;
+    margin-top: 0;
+}
+#CProfile .Jsesbox h2 , #NewsBox h2{
+	color: #555555;
+	text-align: center;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+}
+#CProfile  .jJGbox{
+    margin: 10px 0;
+    padding-bottom: 60px;
+    background: #ffffff;
+    box-sizing: border-box;
+    outline: 1px solid #e9e9e9;
+    outline-offset: -11px;
+    box-shadow: 0px 5px 10px -5px rgb(206 206 206 / 25%);
+    -webkit-box-shadow: 0px 5px 10px -5px rgb(206 206 206 / 25%);
+    box-shadow: 0px 5px 10px -5px rgb(206 206 206 / 25%);
+    border-radius: 12px;
+    max-width: 100%;
+}
+#CProfile .Jsesbox p.titlle{
+    color: #303030;
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    width: 1200px;
+    margin-left: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+    border-left: #717171 1px solid;
+    padding-left: 10px;
+}
+#CProfile .Jsesbox section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#CProfile .Jsesbox .commJJ{display: flex;max-width: 100%;width: 1200px;margin: 50px;position: relative;}
+#CProfile .Jsesbox .commJJ:before{
+	content:
+	"";
+	position: absolute;
+	width: calc(90% - 54px);
+	height: 1px;
+	border-radius: 120px;
+	background: #948e86;
+	bottom: -21px;
+	left: calc(5% - -22px);
+}
+#CProfile .Jsesbox .commJJ img{
+    width: 70px;
+}
+#CProfile .Jsesbox .commJJ .boox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    position: relative;
+}
+#CProfile .Jsesbox .commJJ .boox:hover img{
+	-moz-transform:translateY(-0.75em);
+	-webkit-transform:translateY(-0.75em);
+	-o-transform:translateY(-0.75em);
+	-ms-transform:translateY(-0.75em);
+	transform:translateY(-0.75em);
+}
+#CProfile .Jsesbox .commJJ .boox:before{
+	content:
+	"";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 120px;
+	background: #ddb786;
+	bottom: -25px;
+}
+#CProfile .Jsesbox .commJJ p{
+    color: #353535;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+#NewsBox{
+    position: relative;
+    padding-top: 40px;
+}
+#NewsBox .newswardd{
+    margin-bottom: 60px;
+}
+#NewsBox .newswardd ul li{
+    margin: 0 10px;
+    position: relative;
+}
+#NewsBox .newswardd ul li a:after {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to top,rgb(0 0 0 / 0.75) 0%,rgba(0,0,0,0) 30%);content: "";transition: all 0.5s linear 0s;}
+
+#NewsBox .newswardd a.asslink{display: block;position: absolute;width: 100%;height: 100%;}
+#NewsBox .newswardd li:hover .info{
+    padding: 60px 0;
+}
+#NewsBox .newswardd ul li a.hoverimg{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#NewsBox .newswardd ul li a.hoverimg:after{display:none;}
+#NewsBox .newswardd ul li a.hoverimg img{
+    width: 50px;
+    padding-bottom: 20px;
+    opacity: 0.2;
+}
+#NewsBox .newswardd ul li:hover a.hoverimg{
+    opacity: 1;
+}
+#NewsBox .newswardd ul li:hover a.hoverimg img
+{
+	-moz-transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+	-o-transform: scale(1.8);
+	-ms-transform: scale(1.8);
+	transform: scale(1.8);
+	opacity: 0.5;
+}
+#NewsBox .newswardd li:hover a:after{
+    height: 105%;
+}
+#NewsBox .newswardd  .info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+#NewsBox .newswardd .info h3{
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+#NewsBox .newswardd .info article{
+    font-size: 16px;
+}
+#NewsBox .newswardd2{
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+#NewsBox .newswardd2 section{
+    max-width: 100%;
+    width: 1366px;
+}
+#NewsBox .newswardd2 ul li{
+    margin: 5px 10px;
+    position: relative;
+}
+#NewsBox .newswardd2 ul li:hover .info{
+    -moz-transform: translateY(-0.75em);
+    -webkit-transform: translateY(-0.75em);
+    -o-transform: translateY(-0.75em);
+    -ms-transform: translateY(-0.75em);
+    transform: translateY(-0.75em);
+}
+#NewsBox .newswardd2 ul li a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#NewsBox .newswardd2 .info{
+    background: #c49e6d;
+    padding: 12px 30px;
+}
+#NewsBox .newswardd2 .info h3{
+    font-size: 21px;
+}
+@media screen and (max-width:1440px) {
+	#CProfile .J_img{
+	    width: 48%;
+	}
+	#CProfile .J_text{
+	    width: calc(52% - 6%);
+	    padding: 30px 3%;
+	}
+	#CProfile .J_img img{}
+	#CProfile .Jsesbox .commJJ{
+	    width: 90%;
+	    margin: 10px auto;
+	}
+	#CProfile .jJGbox{
+    margin: 9px 0;
+}
+	
+}
+@media screen and (max-width:1024px){
+	#CProfile .bomm .mmbox{
+	    width: 50%;
+	    margin: 0 0;
+	}
+	#CProfile .bomm .mmbox img{
+	    width: 145px;
+	}
+	#CProfile .listt .leon{
+	    padding: 0 16px;
+	}
+}
+@media screen and (max-width:980px){
+	#CProfile .listt .leon{
+	    padding: 0 13px;
+	}
+	#NewsBox .newswardd2 .info{
+	    padding: 10px 5px;
+	}
+	#NewsBox .newswardd2 .info h3{
+	    font-size: 18px;
+	}
+	#NewsBox .newswardd2 article{
+    font-size: 13px;
+}
+	#NewsBox .newswardd2 ul li{
+		margin: 3px 3px;
+	}
+	#CProfile .Jsesbox .commJJ:before{
+	    width: calc(90% - 43px);
+	}
+	#CProfile .Jsesbox p.titlle{
+    font-size: 18px;
+	    margin-bottom: 20px;
+	}
+	#CProfile .listt .leon p{
+	    font-size: 18px;
+	}
+	#CProfile .Jsesbox .commJJ img{
+	    width: 56px;
+	    display: flex;
+	}
+	#CProfile .Jsesbox .commJJ .boox{
+}
+	#CProfile .Jsesbox .commJJ p{
+	    font-size: 16px;
+	}
+	#NewsBox .newswardd .info h3{
+	    font-size: 16px;
+	}
+	#NewsBox .newswardd .info article{
+	    font-size: 13px;
+	    letter-spacing: 0.15em;
+	}
+	#NewsBox .newswardd ul li{
+    margin: 0 3px;
+}
+}
+@media screen and (max-width:640px){
+	#CProfile .bomm .mmbox{
+	    width: 100%;
+	    margin: 0 0 40px;
+	}
+	#CProfile .bomm .mmbox h3{
+	    font-size: 22px;
+	    background: #282828;
+	    padding: 10px 15px;
+	}
+	#CProfile .bomm .mmbox p{
+    font-size: 15px;
+    line-height: 180%;
+}
+	#CProfile .bomm .mmbox img{
+	    width: 120px;
+	    margin: 15px 0 0;
+	}
+	#CProfile .bomm{
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	#CProfile .bomm:before{display:none;}
+	#CProfile .JHbox{
+	    display: flex;
+	    flex-direction: column;
+	}
+	#CProfile .J_img{
+	    width: 100%;
+	}
+	#CProfile .J_text{
+	    width: calc(100% - 40px);
+	    padding: 20px 20px;
+	}
+	#CProfile .J_text p{
+	    font-size: 16px;
+	}
+	#CProfile .Jsesbox .commJJ .boox{
+	    width: 33.3%;
+	}
+	#CProfile .Jsesbox .commJJ{
+	    flex-wrap: wrap;
+	}
+	#CProfile .Jsesbox .commJJ .boox:before{display: none;}
+	#CProfile .Jsesbox .commJJ:before{display:none;}
+}
