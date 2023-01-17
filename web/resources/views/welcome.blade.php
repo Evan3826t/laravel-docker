@@ -11,63 +11,37 @@
 <![endif]-->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-  <title>台南室內設計裝潢-萬寶隆空間設計-空間設計</title>
+  <title>永櫟山科技有限公司</title>
   <meta name="google-site-verification" content="iPXvAStUm0zk2LBeXIv4q2YFRJscu_jHdaqvdSW2ALw" />
   <meta name="keywords" content="台南室內裝潢,mobile01空間設計,台南裝潢" />
-  <meta name="description" content="台南室內裝潢滿足您的實用需求，mobile01空間設計也滿足我對美感文化的成就，台南裝潢透過設計，您家的延展將更具機能性與生命力！mobile01空間設計如果您有任何居家裝潢與設計的問題，歡迎來電台南裝潢。迎新除舊歲，迎接居家新風貌，局部翻修、老屋翻新、衛浴裝潢，打造居家頂級質感。專人到府丈量。" />
-  <meta property="og:title" content="台南室內設計裝潢-萬寶隆空間設計-空間設計" />
-  <meta property="og:type" content="台南室內裝潢滿足您的實用需求，mobile01空間設計也滿足我對美感文化的成就，台南裝潢透過設計，您家的延展將更具機能性與生命力！mobile01空間設計如果您有任何居家裝潢與設計的問題，歡迎來電台南裝潢。迎新除舊歲，迎接居家新風貌，局部翻修、老屋翻新、衛浴裝潢，打造居家頂級質感。專人到府丈量。" />
+  <meta name="description" content="內容描述" />
+  <meta property="og:title" content="永櫟山科技有限公司" />
+  <meta property="og:type" content="內容描述" />
   <meta property="og:url" content="www.mb-design.com.tw/" />
-  <meta property="og:image" content="www.mb-design.com.tw/userfiles/images/20190223094830393.png" />
   <meta name="rating" content="general" />
   <meta name="revisit-after" content="1 DAYS" />
   <meta name="robots" content="all" />
   <meta name="robots" content="INDEX, FOLLOW" />
-  <link rel="index" title="台南室內設計裝潢-萬寶隆空間設計-空間設計" href="https://www.mb-design.com.tw/index.html" />
-  <link rel="sitemap" type="htm" title="台南室內設計裝潢-萬寶隆空間設計-空間設計" href="https://www.mb-design.com.tw/Sitemap.xml" />
+  <link rel="index" title="永櫟山科技有限公司" href="https://www.mb-design.com.tw/index.html" />
+  <link rel="sitemap" type="htm" title="永櫟山科技有限公司" href="https://www.mb-design.com.tw/Sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" href="https://www.mb-design.com.tw/rss.xml" title="台南室內裝潢,mobile01空間設計,台南裝潢" />
 
   
   <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/main.css') }}" rel="stylesheet">
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+  <!-- 聯絡欄 -->
+  <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+  <!-- 服務流程 -->
+  <link rel="stylesheet" href="{{ asset('css/CProfile.css') }}">
 
   <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
   <script src="{{ asset('js/jquery.SuperSlide.2.1.1.js') }}"></script>
   <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
   <script src="{{ asset('js/jquery.scrollTo-1.4.3.1.js') }}"></script>
-  <script src="{{ asset('js/tw_cn.js') }}"></script>
+  <!-- 服務流程動畫 -->
+  <script src="{{ asset('js/scrollReveal.js') }}" ></script>
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://www.mb-design.com.tw/",
-      "image": "https://www.mb-design.com.tw/userfiles/images/20190223094830393.png",
-      "name": "萬寶隆空間設計",
-      "telephone": "06-2978000",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "70843",
-        "addressLocality": "台南市安平區",
-        "streetAddress": "郡平路276-1號"
-      },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "4.7",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "台南室內設計裝潢-SING萬寶隆空間設計-mobile01空間設計"
-        }
-      }
-    }
-  </script>
   <style type="text/css">
     #form1 p input[type="file"] {
       width: 175px;
@@ -110,9 +84,11 @@
   <div class="wrapper">
     <header>
       <div id="cis">
-        <h1><a class="indexx" href="/" title="萬寶隆空間設計開發有限公司-台南空間設計-台南室內設計-台南新屋設計裝潢-台南店面設計裝潢"><svg>
-              <use xlink:href="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></use>
-            </svg></a></h1>
+        <h1>
+          <a class="indexx" href="/" title="永櫟山科技有限公司">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92"><path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/><path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/><path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/><path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/></svg>
+          </a>
+        </h1>
       </div>
       <div id="top-nav">
         <a href="#" title="選單 MENU" class="nav-func"><i class="fa fa-reorder"></i></a>
@@ -120,53 +96,22 @@
           <ul class="pc">
 
             <li>
-              <a href="newdesign.html"><b>News</b><b>最新消息</b></a>
-              <ul class="subnav"></ul>
+              <a href="newdesign.html"><b>最新消息</b></a>
             </li>
 
             <li>
-              <a href="aboutdesign-recommended.html"><b>About Us</b><b>業主推薦</b></a>
-              <ul class="subnav"></ul>
+              <a href="aboutdesign-recommended.html"><b>業主推薦</b></a>
             </li>
 
             <li>
-              <a href="worksdesign.html"><b>Work</b><b>作品總覽</b></a>
-              <ul class="subnav">
-                <li><a href='worksdesign1.html'>住宅空間</a></li>
-                <li><a href='worksdesign4.html'>商業空間</a></li>
-                <li class='last'><a href='worksdesign6.html'>3 D 渲染</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="bookdesign.html"><b>Team</b><b>核心團隊</b></a>
-              <ul class="subnav"></ul>
-            </li>
-
-            <li class='newsLink'>
-              <a href="/faqdesign.html"><b>Award</b><b>得獎殊榮</b></a>
-              <ul class="subnav"></ul>
-            </li>
-
-            <li class='new'>
-              <a href="/estimate.html"><b>Estimate</b><b>線上估價</b></a>
-              <ul class="subnav"></ul>
-            </li>
-
-            <li>
-              <a href="https://www.mb-design.com.tw/quizstart.html"><b>Style Quiz</b><b>風格測驗</b></a>
-              <ul class="subnav"></ul>
+              <a href="worksdesign.html"><b>作品總覽</b></a>
             </li>
 
             <li class='last'>
-              <a href="askdesign.html"><b>Contact Us</b><b>聯絡我們</b></a>
+              <a href="askdesign.html"><b>聯絡我們</b></a>
               <ul class="subnav"></ul>
             </li>
 
-            <!--<li class="last2"><a href="askdesign.html"><b>Consultation</b><b>線上諮詢</b></a><ul class="subnav pc"></ul></li>-->
-            <li class="last3"><a href="/aboutdesign-recruiting.html"><b>Recruitment</b><b>人才招募</b></a>
-              <ul class="subnav pc"></ul>
-            </li>
           </ul>
           <ul class="langsuper" style="display: none;"></ul>
         </nav>
@@ -230,14 +175,11 @@
     <script src="{{ asset('js/jquery.themepunch.revolution.js') }}" defer></script>
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/banner.css') }}" rel="stylesheet">
 
     <div class="tp-banner-container">
       <div class="tp-banner">
         <ul>
-
           <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809051937798.jpg" data-delay="5000" data-saveperformance="off">
             <img src="https://www.mb-design.com.tw/userfiles/images/20220809051937798.jpg" alt="">
             <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
@@ -248,132 +190,9 @@
             <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
           </li>
 
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052405690.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="https://www.mb-design.com.tw/userfiles/images/20220809052405690.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/newdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052530923.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="https://www.mb-design.com.tw/userfiles/images/20220809052530923.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052530521.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052530521.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/newdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052528281.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052528281.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052527407.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052527407.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/newdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052526894.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052526894.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052526238.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052526238.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/newdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052525581.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052525581.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
-          </li>
-
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809052523456.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="/userfiles/images/20220809052523456.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/newdesign.html" title=""></a>
-          </li>
-
         </ul>
       </div>
-      <div class="slogan zoomIn animated" style="opacity: 1;">
-        <span>DESIGN</span>
-        <b>存 善 . 精 於 業 </b>
-      </div>
-      <div id="fakeNumber">
-        <div class="webframe">
-          <div class="index-project-tl">
-            <h2>服務歷程</h2>
-            <span class="index-tl-line"></span>
-            <em></em>
-          </div>
-          <ul>
-            <li>
-              <div class="eva">
-                <p><b id="myTargetA">0</b>年</p>
-                <h2>台南深根</h2>
-              </div>
-            </li>
-            <li class="midd">
-              <div class="eva">
-                <p><b id="myTargetB">0</b>件以上</p>
-                <h2>案件實績</h2>
-              </div>
-            </li>
-            <li>
-              <div class="eva">
-                <p><b id="myTargetC">0</b>年</p>
-                <h2>工程經歷</h2>
-              </div>
-            </li>
 
-          </ul>
-        </div>
-      </div>
 
     </div>
     <script type="text/javascript">
@@ -454,25 +273,6 @@
       }); //ready
     </script>
 
-    <script src="{{ asset('js/countUp.js') }}"></script>
-
-    <script type="text/javascript">
-      var options = {
-        useEasing: true,
-        useGrouping: true,
-        separator: ',',
-        decimal: '.'
-      }
-      var demoA = new countUp("myTargetA", 0, 10, 0, 8.5, options);
-      var demoB = new countUp("myTargetB", 0, 1000, 0, 10.5, options);
-      var demoC = new countUp("myTargetC", 0, 20, 0, 12.5, options);
-
-      demoA.start();
-      demoB.start();
-      demoC.start();
-    </script>
-
-
     <div id="indexcontact">
       <section>
         <h2>線上諮詢</h2>
@@ -510,82 +310,8 @@
         </div>
       </section>
     </div>
-    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 
     <div id="CProfile">
-      <div class="JHbox">
-        <div class="J_img" data-scroll-reveal="enter left and move 90px over 1.0s">
-          <img src="https://www.mb-design.com.tw/images/35/jaeanimg.jpg">
-        </div>
-        <div class="J_text" data-scroll-reveal="enter right over 0.5s and move 90px over 1.5s">
-          <h2>關於萬寶隆</h2>
-          <p>萬寶隆空間設計，為當今臺南規模最大，更是南台灣資本額最高的室內設計品牌，於2012年發跡於家鄉安平，10年來奉「一個案件的成功，來自一群人的專業」為圭臬，並將企業組織化概念導入室內設計產業，整合設計與工程，開展一站式服務，並成立12個獨立部門，翻準不穩定的外包模式，成就穩定的服務品質。</p>
-          <p>家，是日復一日的生活場域，乘載著喜好、習慣與日常點滴。而萬寶隆，正是您的空間魔法師！因著自由不設限的設計風格，使各式美學融於家居，而穩紮穩打的裝潢品質，則一點一滴將理想藍圖幻化成真。空間因著設計魔法，有了靈魂、有了生命，有了家的氣息。讓萬寶隆空間設計，親手為您實踐家的100種想像吧！</p>
-        </div>
-      </div>
-      <div class="Jprobox">
-        <section>
-          <div data-scroll-reveal="enter top over 0.7s and move 100px">
-            <h2>經營項目<b class="subbtitle">PROJECT</b></h2>
-          </div>
-          <div class="bomm" data-scroll-reveal="enter bottom over 0.7s and move 100px">
-            <div class="mmbox">
-              <h3>住宅空間設計</h3>
-              <img src="https://www.mb-design.com.tw/images/35/proJ-1.png">
-              <p>豪邸/自地自建/透天別墅/電梯大樓</p>
-              <p>/華夏公寓/全室翻新/預售屋客變</p>
-            </div>
-            <div class="mmbox">
-              <h3>商業空間設計</h3>
-              <img src="https://www.mb-design.com.tw/images/35/proJ-2.png">
-              <p>品牌旗艦店/建案實品屋/接待中心/公設規劃</p>
-              <p>/旅館民宿/餐飲空間/辦公空間/零售空間</p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="Jplanbox">
-        <section>
-          <div data-scroll-reveal="enter top over 0.3s and move 100px">
-            <h2>風格企劃<b class="subbtitle">STYLE PLANING</b></h2>
-          </div>
-          <div class="listt" data-scroll-reveal="enter bottom over 0.6s and move 80px">
-            <div class="leon">
-              <p>奢華</p>
-              <b>Luxury</b>
-            </div>
-            <div class="leon">
-              <p>古典</p>
-              <b>Classical</b>
-            </div>
-            <div class="leon">
-              <p>現代</p>
-              <b>Modern</b>
-            </div>
-            <div class="leon">
-              <p>工業</p>
-              <b>Loft</b>
-            </div>
-            <div class="leon">
-              <p>北歐</p>
-              <b>Nordic</b>
-            </div>
-            <div class="leon">
-              <p>美式簡約</p>
-              <b>Minimalist</b>
-            </div>
-            <div class="leon">
-              <p>日式無印</p>
-              <b>apanese</b>
-            </div>
-            <div class="leon">
-              <p>各式客製化風格設計</p>
-              <b>Customization</b>
-            </div>
-          </div>
-        </section>
-      </div>
-
       <div class="Jsesbox">
         <section>
           <div data-scroll-reveal="enter top over 0.7s and move 100px">
@@ -647,7 +373,6 @@
       </div>
 
     </div>
-    <link rel="stylesheet" href="{{ asset('css/CProfile.css') }}">
 
     <div id="service">
       <section>
@@ -792,7 +517,7 @@
         }, 600); //滚回顶部的时间，越小滚的速度越快~
       }
     </script>
-    <div class="translate"><a href="javascript:goTop();" id="gotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a></div>
+    <div class="translate"><a href="javascript:goTop();" id="gotop"><i class="fa-solid fa-arrow-up"></i></a></div>
     <!--go to top end-->
     <a class="bouncing-ball" href="http://onelink.to/swbl" id="superrGF">
       <p class="shadow"><img src="https://www.mb-design.com.tw/images/35/super01.png"></p>
@@ -814,77 +539,16 @@
         slideNav();
       });
     </script>
-    <div class="translate"><a id="fb_btn" href="javascript:void(0);" data-type="1"><img src="https://www.mb-design.com.tw/images/35/Messenger.png"></a></div>
-    <style>
-      .fb_dialog_content {
-        opacity: 0;
-      }
-
-      .fb-customerchat .fb_iframe_widget iframe {
-        right: 120px !important;
-        z-index: -1 !important;
-      }
-
-      .fb-customerchat iframe.fb_customer_chat_bounce_in_v2 {
-        -webkit-transition: ease-in !important;
-        transition: ease-in !important;
-        z-index: 10000 !important;
-      }
-
-      .fb-customerchat iframe.fb_customer_chat_bounce_out_v2 {
-        -webkit-transition: ease-out !important;
-        transition: ease-out !important;
-        z-index: -1 !important;
-      }
-    </style>
     <footer>
       <section>
         <div class="wweeb">
-          <p class="copy">© Copyright All Rights Reserved</p>
-          <div class="info">Apple web design</div>
+          <p>© Copyright All Rights Reserved</p>
         </div>
 
       </section>
-      <section>
-        <p class="share" data-scroll-reveal="enter bottom over 0.7s and move 100px">
-          <a class="community" href="rss.xml" title="rss"><i class="fa fa-rss"></i></a>
-        </p>
-      </section>
     </footer>
     <!--web phoneWrap-->
-    <div class="phoneWrap">
-      <ul>
-        <li><a href="https://www.104.com.tw/company/1a2x6bicjz?jobsource=checkc" title="人才招募" target="_blank">人才招募</a></li>
-        <li class="line"><a href="tel:06-2978000" target="_blank">專人諮詢</a></li>
-      </ul>
-    </div>
 
-    <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.css') }}">
-    <script src="{{ asset('js/jquery.fancybox.min.js') }}" defer></script>
-
-    <script type="text/javascript">
-      $("[data-fancybox]").fancybox({
-        youtube: {
-          controls: 0,
-          showinfo: 0
-        },
-        vimeo: {
-          color: 'f00'
-        }
-      });
-    </script>
-    <div class="wrapper_lines">
-      <div class="workframe center_box talign_center">
-        <div class="col_md_4 d_inblock center_box"></div>
-      </div>
-    </div>
-
-    <script src="{{ asset('js/tw_cn2.js') }}" ></script>
-    <script src="{{ asset('js/scrollReveal.js') }}" ></script>
-    <script src="{{ asset('js/jquery-templates.js') }}" ></script>
-    <script src="{{ asset('js/slick.min.js') }}" ></script>
-    <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
 
     <script type="text/javascript">
       (function($) {
@@ -895,14 +559,7 @@
         });
       })();
     </script>
-    <div id="popupBox" style="display:none;">
-      <div id="ask-wrap">
-        <a id="closePop" href="javascript:void(0);"><i class="fa fa-times"></i></a>
-        <article></article>
-      </div>
-    </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   <script>
     function jqDialog() {
       if ('0' == 1) {
@@ -1038,54 +695,6 @@
       $('#totalTxt').text(total);
     }
     wordsTotal();
-  </script>
-  <script>
-    $(function() {
-      $('.newswardd ul').slick({
-        dots: false,
-        autoplay: true,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        speed: 500,
-        responsive: [{
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        }, {
-          breakpoint: 980,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }]
-      });
-      $('.newswardd2 ul').slick({
-        dots: false,
-        autoplay: true,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 500,
-        responsive: [{
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        }, {
-          breakpoint: 980,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }]
-      });
-    });
   </script>
 </body>
 
