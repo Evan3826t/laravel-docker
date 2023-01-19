@@ -50,6 +50,8 @@ services:
     ports:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     volumes:
-      - /var/lib/mysql
+      - ./laravel_mysql:/var/lib/mysql
     networks:
       - data
+volumes:
+  laravel-mysql:
