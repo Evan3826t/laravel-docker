@@ -13,19 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/123', function () {
-    return view('welcome');
-});
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::prefix('image')->group(function () {
+    Route::get('upload/{filename}',[App\Http\Controllers\ImageController::class, 'showImage'])
+    // Route::get('icon/{filename}','ImageController@showJobImage')
+    ->name('image');
+    Route::get('icon/{filename}',[App\Http\Controllers\ImageController::class, 'showIconImage'])
+    // Route::get('icon/{filename}','ImageController@showJobImage')
+    ->name('jobImage');
+ });
+ 
+Auth::routes();
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

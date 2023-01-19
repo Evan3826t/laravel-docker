@@ -1,701 +1,132 @@
-<!doctype html>
-<!--[if IE 8 ]><html dir="ltr" lang="zh-TW" class="ie8"><![endif]-->
-<!--[if IE 9 ]><html dir="ltr" lang="zh-TW" class="ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="ltr" lang="zh-TW">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <!--[if lt IE 9]>
-<script src="/js/html5.js"></script>
-<![endif]-->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-  <title>永櫟山科技有限公司</title>
-  <meta name="google-site-verification" content="iPXvAStUm0zk2LBeXIv4q2YFRJscu_jHdaqvdSW2ALw" />
-  <meta name="keywords" content="台南室內裝潢,mobile01空間設計,台南裝潢" />
-  <meta name="description" content="內容描述" />
-  <meta property="og:title" content="永櫟山科技有限公司" />
-  <meta property="og:type" content="內容描述" />
-  <meta property="og:url" content="www.mb-design.com.tw/" />
-  <meta name="rating" content="general" />
-  <meta name="revisit-after" content="1 DAYS" />
-  <meta name="robots" content="all" />
-  <meta name="robots" content="INDEX, FOLLOW" />
-  <link rel="index" title="永櫟山科技有限公司" href="https://www.mb-design.com.tw/index.html" />
-  <link rel="sitemap" type="htm" title="永櫟山科技有限公司" href="https://www.mb-design.com.tw/Sitemap.xml" />
-  <link rel="alternate" type="application/rss+xml" href="https://www.mb-design.com.tw/rss.xml" title="台南室內裝潢,mobile01空間設計,台南裝潢" />
+        <title>Laravel</title>
 
-  
-  <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/index.css') }}" rel="stylesheet">
-  <!-- 聯絡欄 -->
-  <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
-  <!-- 服務流程 -->
-  <link rel="stylesheet" href="{{ asset('css/CProfile.css') }}">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.SuperSlide.2.1.1.js') }}"></script>
-  <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.scrollTo-1.4.3.1.js') }}"></script>
-  <!-- 服務流程動畫 -->
-  <script src="{{ asset('js/scrollReveal.js') }}" ></script>
+        <!-- Styles -->
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
+        </style>
 
-  <style type="text/css">
-    #form1 p input[type="file"] {
-      width: 175px;
-      top: 35px;
-      left: 0;
-      cursor: pointer;
-    }
-
-    #form1 p a#chImages {
-      padding: 1px 0;
-      width: 75px;
-      background: #f5f5f5;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43aac6', endColorstr='#3c9abd', GradientType=0);
-      border: #4b4b4b solid 1px;
-      border-radius: 5px;
-      display: block;
-      text-align: center;
-      font-size: 14px;
-      color: #4b4b4b;
-    }
-
-    #form1 .item i.fa-times {
-      font-size: 10pt;
-      color: white;
-    }
-  </style>
-
-
-  <script type="text/javascript">
-    var s = document.createElement("script");
-    s.async = 1;
-    s.src = "https://api.popin.tw/pixel.php?aid=VjZaEffTNM&t=" + Date.now();
-    var t = document.getElementsByTagName("script")[0];
-    t.parentNode.insertBefore(s, t);
-  </script>
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <div id="cis">
-        <h1>
-          <a class="indexx" href="/" title="永櫟山科技有限公司">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92"><path fill="#EA4335" d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#FBBC05" d="M163.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z"/><path fill="#4285F4" d="M209.75 26.34v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z"/><path fill="#34A853" d="M225 3v65h-9.5V3h9.5z"/><path fill="#EA4335" d="M262.02 54.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z"/><path fill="#4285F4" d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z"/></svg>
-          </a>
-        </h1>
-      </div>
-      <div id="top-nav">
-        <a href="#" title="選單 MENU" class="nav-func"><i class="fa fa-reorder"></i></a>
-        <nav id="main-menu" class="menu">
-          <ul class="pc">
-
-            <li>
-              <a href="newdesign.html"><b>最新消息</b></a>
-            </li>
-
-            <li>
-              <a href="aboutdesign-recommended.html"><b>業主推薦</b></a>
-            </li>
-
-            <li>
-              <a href="worksdesign.html"><b>作品總覽</b></a>
-            </li>
-
-            <li class='last'>
-              <a href="askdesign.html"><b>聯絡我們</b></a>
-              <ul class="subnav"></ul>
-            </li>
-
-          </ul>
-          <ul class="langsuper" style="display: none;"></ul>
-        </nav>
-      </div>
-      <script>
-        // <![CDATA[
-        $(function() {
-          function slideNav() {
-            var windowWidth = $(window).width();
-            if (windowWidth > 1240) {
-              $('#main-menu ul').addClass('pc');
-              $('#main-menu').show();
-            } else {
-              $('#main-menu ul').removeClass('pc');
-              $('#main-menu').hide();
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
             }
-          }
-          slideNav();
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-          $(window).resize(function() {
-            slideNav();
-          });
-          $("#main-menu ul.pc li a").hover(function() {
-            $(this).animate({
-              backgroundPosition: '0 0'
-            });
-          }, function() {
-            $(this).animate({
-              backgroundPosition: '0 -90px'
-            });
-          });
-
-          $('.nav-func').click(function() {
-            if ('none' == $('#main-menu').css('display') || '' == $('#main-menu').css('display')) {
-              $('#main-menu').slideDown();
-            } else {
-              $('#main-menu').slideUp();
-            }
-            return false;
-          });
-
-          $(window).scroll(function() {
-            if ($(document).scrollTop() > 0) {
-              $('header').addClass('headerTop', 800);
-            } else {
-              $('header').removeClass('headerTop', 800);
-            }
-          });
-          $(window).scroll(function() {
-            if ($(document).scrollTop() > 250) {
-              $('.about-nav').addClass('about-navTop', 800);
-            } else {
-              $('.about-nav').removeClass('about-navTop', 800);
-            }
-          });
-        });
-        // ]]>
-      </script>
-    </header>
-    <script src="{{ asset('js/jquery.themepunch.tools.min.js') }}" defer></script>
-    <script src="{{ asset('js/jquery.themepunch.revolution.js') }}" defer></script>
-
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/banner.css') }}" rel="stylesheet">
-
-    <div class="tp-banner-container">
-      <div class="tp-banner">
-        <ul>
-          <li data-transition="fade" data-masterspeed="5000" data-thumb="/userfiles/images/20220809051937798.jpg" data-delay="5000" data-saveperformance="off">
-            <img src="https://www.mb-design.com.tw/userfiles/images/20220809051937798.jpg" alt="">
-            <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase" data-x="left" data-y="center" data-hoffset="100" data-voffset="-130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="1000" data-start="1000" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3;">
-              <p></p>
-              <p class="bannertwo">
-              <p>
-            </div>
-            <a href="https://www.mb-design.com.tw/worksdesign.html" title=""></a>
-          </li>
-
-        </ul>
-      </div>
-
-
-    </div>
-    <script type="text/javascript">
-      var revapi;
-      jQuery(document).ready(function() {
-        revapi = jQuery('.tp-banner').revolution({
-          dottedOverlay: "none",
-          delay: 16000,
-          startwidth: 1140,
-          fullScreenAlignForce: "on",
-          startheight: 700,
-          hideThumbs: 200,
-
-          thumbWidth: 100,
-          thumbHeight: 50,
-          thumbAmount: 5,
-
-          navigationType: "bullet",
-          navigationArrows: "solo",
-          navigationStyle: "preview4",
-
-          touchenabled: "on",
-          onHoverStop: "on",
-
-          swipe_velocity: 0.7,
-          swipe_min_touches: 1,
-          swipe_max_touches: 1,
-          drag_block_vertical: false,
-
-          parallax: "mouse",
-          parallaxBgFreeze: "on",
-          parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-
-          keyboardNavigation: "off",
-
-          navigationHAlign: "center",
-          navigationVAlign: "bottom",
-          navigationHOffset: 0,
-          navigationVOffset: 20,
-
-          soloArrowLeftHalign: "left",
-          soloArrowLeftValign: "center",
-          soloArrowLeftHOffset: 20,
-          soloArrowLeftVOffset: 0,
-
-          soloArrowRightHalign: "right",
-          soloArrowRightValign: "center",
-          soloArrowRightHOffset: 20,
-          soloArrowRightVOffset: 0,
-
-          shadow: 0,
-          fullWidth: "off",
-          fullScreen: "on",
-
-          spinner: "spinner4",
-
-          stopLoop: "off",
-          stopAfterLoops: -1,
-          stopAtSlide: -1,
-
-          shuffle: "off",
-
-          autoHeight: "off",
-          forceFullWidth: "off",
-
-          hideThumbsOnMobile: "off",
-          hideNavDelayOnMobile: 1500,
-          hideBulletsOnMobile: "off",
-          hideArrowsOnMobile: "off",
-          hideThumbsUnderResolution: 0,
-
-          hideSliderAtLimit: 0,
-          hideCaptionAtLimit: 0,
-          hideAllCaptionAtLilmit: 0,
-          startWithSlide: 0,
-          fullScreenOffsetContainer: ".header"
-        });
-      }); //ready
-    </script>
-
-    <div id="indexcontact">
-      <section>
-        <h2>線上諮詢</h2>
-        <div class="contactinfo">
-          <ul>
-            <li data-scroll-reveal="enter top over 0s and move 200px">
-              <div class="photo"><img src="https://www.mb-design.com.tw/images/35/bottom-icon-phone.png"></div>
-              <div class="txt">
-                <b>電話</b>
-                <p><a href="tel:06-2978000">06-2978000</a></p>
-              </div>
-            </li>
-            <li data-scroll-reveal="enter top over 0.5s and move 200px">
-              <div class="photo"><img src="https://www.mb-design.com.tw/images/35/bottom-icon-fax.png"></div>
-              <div class="txt">
-                <b>傳真</b>
-                <p>06-2971123</p>
-              </div>
-            </li>
-            <li data-scroll-reveal="enter top over 1s and move 200px">
-              <div class="photo"><img src="https://www.mb-design.com.tw/images/35/bottom-icon-add.png"></div>
-              <div class="txt">
-                <b>公司地址</b>
-                <p>70843 台南市安平區郡平路276-1號</p>
-              </div>
-            </li>
-            <li data-scroll-reveal="enter top over 1.5s and move 200px">
-              <div class="photo"><img src="https://www.mb-design.com.tw/images/35/bottom-icon-fb.png"></div>
-              <div class="txt">
-                <b>電子信箱</b>
-                <p> <a href="mailto:service@swbl.com.tw" title="service@swbl.com.tw">service@swbl.com.tw</a></p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <div id="CProfile">
-      <div class="Jsesbox">
-        <section>
-          <div data-scroll-reveal="enter top over 0.7s and move 100px">
-            <h2>服務流程<b class="subbtitle">PROCESSES</b></h2>
-          </div>
-          <div class="jJGbox" data-scroll-reveal="enter left over 0.7s and move 100px">
-            <p class="titlle">設計訂製流程</p>
-            <div class="commJJ">
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa01.png">
-                <p>初步洽談</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa02.png">
-                <p>實地放樣</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa03.png">
-                <p>設計提案</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa04.png">
-                <p>預算控管</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa05.png">
-                <p>設計委託</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa06.png">
-                <p>細部設計</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/sa07.png">
-                <p>設計定稿</p>
-              </div>
-            </div>
-          </div>
-          <div class="jJGbox" data-scroll-reveal="enter right over 0.7s and move 100px">
-            <p class="titlle">工程訂製流程</p>
-            <div class="commJJ">
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba01.png">
-                <p>工程委託</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba02.png">
-                <p>預排工期</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba03.png">
-                <p>勘驗防護</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba04.png">
-                <p>工程施作</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba05.png">
-                <p>施作品管</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba06.png">
-                <p>檢核優化</p>
-              </div>
-              <div class="boox"><img src="https://www.mb-design.com.tw/images/35/baba07.png">
-                <p>圓滿結案</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-    </div>
-
-    <div id="service">
-      <section>
-        <div id="contact">
-          <h3>Inquiry Form</h3><br />
-          <div class="ccsJ">
-            <h3 class="two">免費諮詢表單</h3>
-            <h3 class="rred">標示 * 為必填欄位</h3>
-          </div>
-          <div class="contact-form">
-            <fieldset>
-              <div class="item col_4">
-                <p><label><i class="fa fa-circle" aria-hidden="true"></i> 姓名<b class="rred">*</b></label><input type="text" id="Name" name="Name" /></p>
-              </div>
-              <div class="item col_4">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 稱謂<b class="rred">*</b></label>
-                  <font>
-                    <span><input type="radio" id="Sex" name="Sex" value="先生" /> 先生</span>
-                    <span><input type="radio" id="Sex" name="Sex" value="小姐" /> 小姐</span>
-                  </font>
-                </p>
-              </div>
-              <div class="item col_4">
-                <p><label><i class="fa fa-circle" aria-hidden="true"></i> 手機/市話<b class="rred">*</b></label><input type="text" id="Mobile" name="Mobile" /></p>
-              </div>
-              <div class="item col_4">
-                <p><label><i class="fa fa-circle" aria-hidden="true"></i> Email</label><input type="text" id="Email" name="Email" /></p>
-              </div>
-              <div class="item col_4">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 空間性質<b class="rred">*</b></label>
-                  <select name="Title" id="Title">
-                    <option value="" selected>請選擇</option>
-                    <option value="預售屋">預售屋</option>
-                    <option value="新成屋">新成屋</option>
-                    <option value="自地自建">自地自建</option>
-                    <option value="商業空間">商業空間</option>
-                    <option value="全室翻新">全室翻新</option>
-                    <option value="其他">其他</option>
-                  </select>
-                </p>
-              </div>
-              <div class="item col_4">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 室內坪數<b class="rred">*</b></label>
-                  <select name="LevelGround" id="LevelGround">
-                    <option value="" selected>請選擇</option>
-                    <option value="40坪以下">40坪以下</option>
-                    <option value="40~80坪">40~80坪</option>
-                    <option value="80~120坪">80~120坪</option>
-                    <option value="120~160坪">120~160坪</option>
-                    <option value="160~200坪">160~200坪</option>
-                    <option value="200坪以上">200坪以上</option>
-                  </select>
-                </p>
-              </div>
-              <div class="item col_4">
-                <p><label><i class="fa fa-circle" aria-hidden="true"></i> 建案名稱<b class="rred">*</b></label><input type="text" id="Company" name="Company" /></p>
-              </div>
-              <div class="item col_4">
-                <p><label><i class="fa fa-circle" aria-hidden="true"></i> 建案地址<b class="rred">*</b></label><input type="text" id="Address" name="Address" /></p>
-              </div>
-              <div class="item col_4">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 可動工時間<b class="rred">*</b></label>
-                  <select name="AvailableTime" id="AvailableTime">
-                    <option value="" selected>請選擇</option>
-                    <option value="可立即動工">可立即動工</option>
-                    <option value="半年內">半年內</option>
-                    <option value="一年以上">一年以上</option>
-                  </select>
-                </p>
-              </div>
-              <div class="item col_2">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 工程預算<b class="rred">*</b></label>
-                  <select name="Budget" id="Budget">
-                    <option value="" selected>請選擇</option>
-                    <option value="50-70萬">50-70萬</option>
-                    <option value="70-90萬">70-90萬</option>
-                    <option value="90-120萬">90-120萬</option>
-                    <option value="120-150萬">120-150萬</option>
-                    <option value="150-180萬">150-180萬</option>
-                    <option value="180-210萬">180-210萬</option>
-                    <option value="210-240萬">210-240萬</option>
-                    <option value="240-270萬">240-270萬</option>
-                    <option value="270-300萬">270-300萬</option>
-                    <option value="300-350萬">300-350萬</option>
-                    <option value="350-400萬">350-400萬</option>
-                    <option value="400-450萬">400-450萬</option>
-                    <option value="450-500萬">450-500萬</option>
-                    <option value="500萬以上">500萬以上</option>
-                  </select>
-                </p>
-              </div>
-              <div class="item col_10 how">
-                <p>
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 從何處得知萬寶隆<b class="rred">*</b><span class="nanaban">請於其他處填寫由何管道得知(FB、Google、IG...等)</span></label>
-                  <font>
-                    <span><input type="radio" id="How1" name="How" value="網路資訊" /> 網路資訊</span>
-                    <span><input type="radio" id="How2" name="How" value="廣播媒體" /> 廣播媒體</span>
-                    <span><input type="radio" id="How3" name="How" value="工地現場" /> 工地現場</span>
-                    <span><input type="radio" id="How32" name="How" value="建案/代銷" /> 建案/代銷</span>
-                    <span><input type="radio" id="How6" name="How" value="路過門市" /> 路過門市</span>
-                    <span class="other"><input type="radio" id="How4" name="How" value="親友推薦" /> 親友推薦：<input type="text" id="ParentesHow" name="ParentesHow" /></span>
-                    <span class="other"><input type="radio" id="How5" name="How" value="其他" /> 其他：<input type="text" id="OtherHow" name="OtherHow" /></span>
-                  </font>
-                </p>
-              </div>
-              <div class="item col_12 bigg">
-                <p style="position:relative;">
-                  <label><i class="fa fa-circle" aria-hidden="true"></i> 上傳喜好風格照片 </label>
-                  <input type="file" id="Image" accept="image/jpeg, image/jpg" multiple>
-                </p>
-                <div class="up_box">
-                  <div id="previewImgs"></div>
-                  <span id="noKB" class="noKB"></span>
-                  <input type="hidden" id="TotalImg" value="0">
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
                 </div>
-              </div>
-              <div class="item col_12 big">
-                <p><label>留言內容</label><textarea name="Content" id="Content" cols="45" rows="5"></textarea></p>
-              </div>
-              <div class="item col_6 check_box">
-                <div class="formset g-recaptcha" data-sitekey="6LedXVcjAAAAAI5mG70jC0hwSt2YSHT4T3XJwWvk"></div>
-              </div>
-              <div class="item col_6 sent">
-                <p class="send"><a id="btnOK">確認送出 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
-              </div>
-            </fieldset>
-          </div>
+            @endif
+
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
+                        <g clip-path="url(#clip0)" fill="#EF3B2D">
+                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
+                            <div class="flex items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
+                            </div>
+
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
+                    <div class="text-center text-sm text-gray-500 sm:text-left">
+                        <div class="flex items-center">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
+                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+
+                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
+                                Shop
+                            </a>
+
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+
+                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
+                                Sponsor
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-    <!--go to top-->
-    <script>
-      //回到顶部
-      function goTop() {
-        $('html,body').animate({
-          'scrollTop': 0
-        }, 600); //滚回顶部的时间，越小滚的速度越快~
-      }
-    </script>
-    <div class="translate"><a href="javascript:goTop();" id="gotop"><i class="fa-solid fa-arrow-up"></i></a></div>
-    <!--go to top end-->
-    <a class="bouncing-ball" href="http://onelink.to/swbl" id="superrGF">
-      <p class="shadow"><img src="https://www.mb-design.com.tw/images/35/super01.png"></p>
-    </a>
-    <script type="text/javascript">
-      var $nowWw = $(window).width();
-      $(document).ready(function() {
-        var $headerheight = $('footer').height();
-        $(".wrapper >.hidetext").css("height", $headerheight + "px");
-
-      });
-
-      function slideNav() {
-        var $headerheight = $('footer').height();
-        $(".wrapper >.hidetext").css("height", $headerheight + "px");
-      }
-      slideNav();
-      $(window).resize(function() {
-        slideNav();
-      });
-    </script>
-    <footer>
-      <section>
-        <div class="wweeb">
-          <p>© Copyright All Rights Reserved</p>
-        </div>
-
-      </section>
-    </footer>
-    <!--web phoneWrap-->
-
-
-    <script type="text/javascript">
-      (function($) {
-        'use strict';
-        window.scrollReveal = new scrollReveal({
-          reset: true,
-          move: '50px'
-        });
-      })();
-    </script>
-  </div>
-  <script>
-    function jqDialog() {
-      if ('0' == 1) {
-        $('#popupBox').css('display', 'block');
-      }
-    }
-    $(function() {
-
-      $('#btnOK').click(function() {
-        let errorMsg = '';
-        if ($('#Name').val() == '') {
-          errorMsg += "請輸入姓名!\r";
-          $('#Name').focus();
-        }
-        if ($("input:radio[name='Sex']:checked").size() == 0) {
-          errorMsg += '請選擇您的稱謂!\r';
-        }
-        if ($('#Mobile').val() == '') {
-          errorMsg += '請輸入手機/市話!\r';
-          $('#Mobile').focus();
-        } else {
-          var rePhone = /^09\d{2}(\d{6}|-\d{6}|-\d{3}-\d{3})|(0\d{1,2}-?|\(\d{2,3}\))\d{3,4}-?\d{4}$/;
-          if (!rePhone.test($('#Mobile').val())) {
-            errorMsg += '請輸入正確的手機/市話!\r';
-            $('#Mobile').focus();
-          }
-        }
-        if ($('#Title').val() == '') {
-          errorMsg += '請選擇空間性質!\r';
-          $('#Title').focus();
-        }
-        if ($('#LevelGround').val() == '') {
-          errorMsg += '請選擇室內坪數!\r';
-          $('#LevelGround').focus();
-        }
-        if ($('#Company').val() == '') {
-          errorMsg += '請輸入建案名稱!\r';
-          $('#Company').focus();
-        }
-        if ($('#Address').val() == '') {
-          errorMsg += '請輸入建案地址!\r';
-          $('#Address').focus();
-        }
-        if ($('#AvailableTime').val() == '') {
-          errorMsg += '請選擇可動工時間!\r';
-          $('#AvailableTime').focus();
-        }
-        if ($('#Budget').val() == '') {
-          errorMsg += '請選擇工程預算!\r';
-          $('#Budget').focus();
-        }
-        if ($("input:radio[name='How']:checked").size() == 0) {
-          errorMsg += '請選擇從何處得知萬寶隆!\r';
-        }
-        var val2 = $('input:radio[name="How"]:checked').val();
-        if (val2 == '親友推薦' && $('#ParentesHow').val() == '') {
-          errorMsg += '請填寫親友姓名';
-          $('#ParentesHow').focus();
-        }
-        if (val2 == '其他' && $('#OtherHow').val() == '') {
-          errorMsg += '請填寫其他';
-          $('#OtherHow').focus();
-        }
-        if ($('#g-recaptcha-response').val() == '') {
-          errorMsg += '請先驗證!\r';
-        }
-        if (errorMsg != '') {
-          alert(errorMsg)
-          return false;
-        }
-        $('#form1').submit();
-      });
-
-      setTimeout("jqDialog()", 500);
-      $('#closePop').click(function() {
-        $('#popupBox').css('display', 'none');
-      });
-    });
-
-    $("#Image").change(function() {
-      //$("#previewImgs").html(""); // 清除預覽
-      $("#noKB").html("");
-
-      if ($('#TotalImg').val() >= 10) {
-        alert('照片最多只能上傳10張!');
-      } else {
-        readURL(this);
-      }
-    });
-
-    function readURL(input) {
-      if (input.files && input.files.length >= 0) {
-        if (input.files.length > 10) {
-          $("#previewImgs").append("<span class='noKB'>最多只能上傳10張</div>");
-        }
-        var maxSize = 500 * 1024;
-        var total = 0;
-        for (i = 0; i < input.files.length; i++) {
-          if (i < 5) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-              if (e.total < maxSize) {
-                var p = $("<p></p>").css('background-image', 'url(' + e.target.result + ')');
-                var img = $("<img>").attr('src', '/images/img-memberBg.png');
-                var inputh = $("<input type='hidden' name='Images[]'>").val(e.target.result);
-                var a = $("<a></a>").attr('href', 'javascript:void(0);').attr('onclick', 'removeImg($(this));').html('<i class="fa fa-times"></i>');
-                p.append(img).append(inputh).append(a);
-                $("#previewImgs").append(p);
-                $('#TotalImg').val(parseInt($('#TotalImg').val()) + 1);
-              } else {
-                alert("上傳的圖片不可以超過500KB!");
-                $("#noKB").text("上傳的圖片不可以超過500KB!");
-              }
-            }
-            reader.readAsDataURL(input.files[i]);
-          }
-        }
-        if ($("#noKB").text() > 0) {
-          $("#noKB").text("上傳的圖片不可以超過800KB!");
-        }
-      }
-    }
-
-    function removeImg(a) {
-      a.parent().remove();
-      $('#TotalImg').val(parseInt($('#TotalImg').val()) - 1);
-    }
-
-    function wordsTotal() {
-      var countMax = 500;
-      var thisValueLength = $('#Content').val().length;
-      var total = countMax - thisValueLength;
-      $('#totalTxt').text(total);
-    }
-    wordsTotal();
-  </script>
-</body>
-
+    </body>
 </html>
