@@ -56,7 +56,7 @@
 <body>
     <div id="app">
         <!-- <example-component></example-component> -->
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>

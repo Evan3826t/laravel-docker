@@ -56,8 +56,39 @@
   </div>
 </div>
 
+<div class="container mt-5 mb-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://picsum.photos/200/200/?random=2" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">標題</h5>
+          <p class="card-text">簡述</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://picsum.photos/200/200/?random=2" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">標題</h5>
+          <p class="card-text">簡述</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://picsum.photos/200/200/?random=2" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">標題</h5>
+          <p class="card-text">簡述</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="container bg-dark p-5">
+<div class="container p-5">
   <div class="slider responsive">
     <div>
       <img src="https://picsum.photos/200/200/?random=1" alt="" class="rounded mx-auto d-block">
@@ -79,7 +110,6 @@
     </div>
   </div>
 </div>
-
 
 <div id="CProfile">
   <div class="Jsesbox">
@@ -277,6 +307,7 @@
     </div>
   </section>
 </div>
+
 <div class="translate"><a href="javascript:goTop();" id="gotop"><i class="fa-solid fa-arrow-up"></i></a></div>
 <footer>
   <section>
@@ -337,6 +368,13 @@
       }
     }
     slideNav();
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 0) {
+        $('header').addClass('headerTop', 800);
+      } else {
+        $('header').removeClass('headerTop', 800);
+      }
+    });
     $(window).resize(function() {
       slideNav();
     });
