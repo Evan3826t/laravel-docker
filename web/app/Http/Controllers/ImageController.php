@@ -27,7 +27,7 @@ class ImageController extends Controller
             return $response;
         } else {
             abort(404);
-        }
+    }
     }
     protected function showIconImage($filename)
     {

@@ -27,24 +27,25 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
 
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slick-theme.min.css') }}" rel="stylesheet">
     <!-- 聯絡欄 -->
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     <!-- 服務流程 -->
     <link rel="stylesheet" href="{{ asset('css/CProfile.css') }}">
 
-    <script src="{{ asset('js/jquery-1.8.2.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.SuperSlide.2.1.1.js') }}"></script>
-    <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.scrollTo-1.4.3.1.js') }}"></script>
-    <!-- 服務流程動畫 -->
-    <script src="{{ asset('js/scrollReveal.js') }}"></script>
-    <script src="{{ asset('js/jquery.themepunch.tools.min.js') }}" defer></script>
-    <script src="{{ asset('js/jquery.themepunch.revolution.js') }}" defer></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <!-- 輪播 -->
+    <script src="{{ asset('js/slick.js') }}" defer></script>
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> -->
+
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/banner.css') }}" rel="stylesheet">
@@ -54,7 +55,7 @@
 
 <body>
     <div id="app">
-        <example-component></example-component>
+        <!-- <example-component></example-component> -->
         <main class="py-4">
             @yield('content')
         </main>

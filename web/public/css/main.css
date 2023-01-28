@@ -1,4 +1,4 @@
-body { margin:0; border:0; width:100%; color: #fff; font-size: 14px; line-height:170%; }
+body {background-color: #000; margin:0; border:0; width:100%; color: #fff; font-size: 14px; line-height:170%; }
 
 div, h1, h2, h3, h4, hr, p, form, label, input, textarea, img, span { text-align: left; vertical-align: middle; margin: 0px; padding: 0px; word-wrap: normal; word-break: normal; border-width:0; font-family: "敺株��迤暺煾��", "��𧢲�𨅯�瑚葉暺�", "Lucida Grande", "Arial", "Arial Narrow"; transition:all linear 0.5s; -moz-transition:all linear 0.5s; -ms-transition:all linear 0.5s; -o-transition:all linear 0.5s; -webkit-transition:all linear 0.5s; }
 
@@ -135,10 +135,10 @@ footer .fb ul li img { width: 50px; }
 	header #top-nav .menu{ margin-right: -160px; }
 	header #top-nav .menu>ul>li{ margin: -23px 4px; }
 	header #top-nav .menu>ul>li{ margin: 0 10px; width: 100%; }
-	header #top-nav .menu{ margin-right: 30px; }
+
 	header #top-nav .nav-func{ display:block; position: fixed; right: 80px; font-size: 26px; top: 19px; }
-	header #top-nav .menu{ display: none; position: fixed; top: 75px; right: 5%; background: rgba(25,25,25,0.9); float: none; margin: 0; width: 90%; }
-	header #top-nav .menu>ul>li{ line-height: 150%; float: none; display: block; margin: 0; text-align: center; padding: 8px 20px; }
+	header #top-nav .menu{ display: none; position: fixed; top: 75px; right: 0; background: rgba(25,25,25,0.9); float: none; margin: 0; width: 20%; }
+	header #top-nav .menu>ul>li{ line-height: 150%; float: none; display: block; margin: 0; text-align: center;}
 	header #top-nav .menu>ul>li>a{ height: auto; width: auto; text-align: center; font-size: 16px; }
 	header #top-nav .menu li a b:last-child, header #top-nav .menu li a:hover b:first-child { line-height: initial; color: #fff; }
 	header #top-nav .menu li a:hover b:first-child { top: -4px;  font-size: 16px; }
@@ -147,7 +147,7 @@ footer .fb ul li img { width: 50px; }
 	header #top-nav .menu>ul>li{ margin: 0 5px; }
 	header #top-nav .menu{ margin-top: 22px; }
 	header #top-nav .menu>ul>li { width: 100%; }
-	header #top-nav .menu>ul{ overflow-y: scroll; height: 80vh; }
+	/* header #top-nav .menu>ul{ overflow-y: scroll; height: 80vh; } */
 	header #top-nav a.language {float: unset;margin-top: 0px;}
 	header #top-nav, header #top-nav .menu>ul>li{ line-height:45px; }
 }
